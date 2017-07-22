@@ -1,0 +1,2 @@
+# PluginManager
+Unity Plugin Manager
