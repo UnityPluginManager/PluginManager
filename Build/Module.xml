@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Module>
+  <Name>UnityPluginManager</Name>
+  <DefaultStartupProject>PluginManager.Installer</DefaultStartupProject>
+  <Packages>
+    <Package Uri="https-nuget://www.nuget.org/api/v2/|Mono.Cecil" Folder="Dependencies/Mono.Cecil" GitRef="0.9.6.4" />
+  </Packages>
+</Module>
