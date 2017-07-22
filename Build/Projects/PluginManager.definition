@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project Name="PluginManager" Path="Source/PluginManager" Type="Library">
-	<References>
-		<!-- GAC Assemblies -->
-		<Reference Include="System" />
-		<Reference Include="System.Core" />
+    <References>
+        <!-- GAC Assemblies -->
+        <Reference Include="System" />
+        <Reference Include="System.Core" />
 
-		<!-- Unity API -->
-		<Reference Include="UnityEngine" />
-	</References>
+        <!-- Unity API -->
+        <Reference Include="UnityEngine" />
+    </References>
 
-	<!-- The framework version must be v3.5 or lower,
+    <!-- The framework version must be v3.5 or lower,
          because that's the only one supported by all
          versions of Unity. -->
-	<Properties>
-		<FrameworkVersions>
-			<Platform Name="Windows"><Version>v3.5</Version></Platform>
-			<Platform Name="Linux"><Version>v3.5</Version></Platform>
-			<Platform Name="MacOS"><Version>v3.5</Version></Platform>
-		</FrameworkVersions>
-	</Properties>
+    <Properties>
+        <FrameworkVersions>
+            <Platform Name="Windows"><Version>v3.5</Version></Platform>
+            <Platform Name="Linux"><Version>v3.5</Version></Platform>
+            <Platform Name="MacOS"><Version>v3.5</Version></Platform>
+        </FrameworkVersions>
+    </Properties>
 
-	<Files>
+    <Files>
         <Compile Include="PluginManager.cs" />
         <Compile Include="Plugin/Attributes.cs" />
         <Compile Include="Plugin/Extensions/Extensions.cs" />
-	</Files>
+    </Files>
 </Project>
