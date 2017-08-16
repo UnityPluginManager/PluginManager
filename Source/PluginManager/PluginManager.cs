@@ -81,12 +81,5 @@ namespace PluginManager
                 _gameObject.AddComponent(t);
             }
         }
-
-        private void Update()
-        {
-            // reload plugins with end key
-            if (Input.GetKeyDown(KeyCode.End))
-                LoadPlugins();
-        }
     }
 }
