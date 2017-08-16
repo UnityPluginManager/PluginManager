@@ -44,7 +44,7 @@ namespace PluginManager
         {
             if (_types != null) _types.Clear();
             else _types = new List<Type>();
-            
+
             if (Directory.Exists("./Plugins"))
                 foreach (var path in Directory.GetFiles("./Plugins", "*.dll"))
             {
@@ -52,7 +52,7 @@ namespace PluginManager
                 {
                     // load plugin
                     var module = Assembly.LoadFile(path);
-                    
+
                     // search for behaviours
                     foreach (var type in module.GetTypes())
                     {
@@ -67,6 +67,11 @@ namespace PluginManager
                 {
                     Debug.LogErrorFormat("Bad plugin: {0}", path);
                 }
+            }
+            else
+            {
+                Debug.LogErrorFormat("Couldn't find plugins folder: {0}",
+                    Path.Combine(Directory.GetCurrentDirectory(), "Plugins"));
             }
             
             foreach (var t in _types)
