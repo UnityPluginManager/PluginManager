@@ -23,6 +23,6 @@
     <Files>
         <Compile Include="PluginManager.cs" />
         <Compile Include="Plugin/Attributes.cs" />
-        <Compile Include="Plugin/Extensions/Extensions.cs" />
+        <Compile Include="Plugin/Extensions/*.cs" />
     </Files>
 </Project>

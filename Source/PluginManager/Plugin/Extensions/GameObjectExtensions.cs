@@ -3,12 +3,12 @@ using UnityEngine;
 
 namespace PluginManager.Plugin.Extensions
 {
-    /// <summary></summary>
-    public static class Extensions
+    /// <summary>Extension methods for the GameObject class.</summary>
+    public static class GameObjectExtensions
     {
-        /// <summary></summary>
-        /// <param name="self"></param>
-        /// <param name="component"></param>
+        /// <summary>Removes a component from a GameObject.</summary>
+        /// <param name="self">The GameObject.</param>
+        /// <param name="component">The component type.</param>
         public static void RemoveComponent(this GameObject self, Type component)
         {
             UnityEngine.Object.Destroy(self.GetComponent(component));
