@@ -14,8 +14,7 @@ namespace PluginManager.Plugin.Extensions
             var prevRender = RenderTexture.active;
             
             var newRender = RenderTexture.GetTemporary(self.width, self.height, 0,
-                self.format.GetRenderTextureFormat(),
-                RenderTextureReadWrite.Linear);
+                self.format.GetRenderTextureFormat(), RenderTextureReadWrite.Linear);
 
             Graphics.Blit(self, newRender);
             RenderTexture.active = newRender;
