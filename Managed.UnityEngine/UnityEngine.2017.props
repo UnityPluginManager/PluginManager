@@ -1,0 +1,238 @@
+<Project>
+    <ItemGroup>
+        <Reference Include="UnityEngine.UI" Condition="Exists('$(MSBuildThisFileDirectory)\Managed\UnityEngine.UI.dll')">
+            <HintPath>$(MSBuildThisFileDirectory)\Managed\UnityEngine.UI.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+
+        <Reference Include="UnityEngine.AccessibilityModule" Condition="Exists('$(MSBuildThisFileDirectory)\Managed\UnityEngine.AccessibilityModule.dll')">
+            <HintPath>$(MSBuildThisFileDirectory)\Managed\UnityEngine.AccessibilityModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+
+        <Reference Include="UnityEngine.ParticleSystemModule" Condition="Exists('$(MSBuildThisFileDirectory)\Managed\UnityEngine.ParticleSystemModule.dll')">
+            <HintPath>$(MSBuildThisFileDirectory)\Managed\UnityEngine.ParticleSystemModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+
+        <Reference Include="UnityEngine.PhysicsModule" Condition="Exists('$(MSBuildThisFileDirectory)\Managed\UnityEngine.PhysicsModule.dll')">
+            <HintPath>$(MSBuildThisFileDirectory)\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+
+        <Reference Include="UnityEngine.VehiclesModule" Condition="Exists('$(MSBuildThisFileDirectory)\Managed\UnityEngine.VehiclesModule.dll')">
+            <HintPath>$(MSBuildThisFileDirectory)\Managed\UnityEngine.VehiclesModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+
+        <Reference Include="UnityEngine.ClothModule" Condition="Exists('$(MSBuildThisFileDirectory)\Managed\UnityEngine.ClothModule.dll')">
+            <HintPath>$(MSBuildThisFileDirectory)\Managed\UnityEngine.ClothModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+
+        <Reference Include="UnityEngine.AIModule" Condition="Exists('$(MSBuildThisFileDirectory)\Managed\UnityEngine.AIModule.dll')">
+            <HintPath>$(MSBuildThisFileDirectory)\Managed\UnityEngine.AIModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+
+        <Reference Include="UnityEngine.AnimationModule" Condition="Exists('$(MSBuildThisFileDirectory)\Managed\UnityEngine.AnimationModule.dll')">
+            <HintPath>$(MSBuildThisFileDirectory)\Managed\UnityEngine.AnimationModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+
+        <Reference Include="UnityEngine.TextRenderingModule" Condition="Exists('$(MSBuildThisFileDirectory)\Managed\UnityEngine.TextRenderingModule.dll')">
+            <HintPath>$(MSBuildThisFileDirectory)\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+
+        <Reference Include="UnityEngine.UIModule" Condition="Exists('$(MSBuildThisFileDirectory)\Managed\UnityEngine.UIModule.dll')">
+            <HintPath>$(MSBuildThisFileDirectory)\Managed\UnityEngine.UIModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+
+        <Reference Include="UnityEngine.TerrainPhysicsModule" Condition="Exists('$(MSBuildThisFileDirectory)\Managed\UnityEngine.TerrainPhysicsModule.dll')">
+            <HintPath>$(MSBuildThisFileDirectory)\Managed\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+
+        <Reference Include="UnityEngine.IMGUIModule" Condition="Exists('$(MSBuildThisFileDirectory)\Managed\UnityEngine.IMGUIModule.dll')">
+            <HintPath>$(MSBuildThisFileDirectory)\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+
+        <Reference Include="UnityEngine.ClusterInputModule" Condition="Exists('$(MSBuildThisFileDirectory)\Managed\UnityEngine.ClusterInputModule.dll')">
+            <HintPath>$(MSBuildThisFileDirectory)\Managed\UnityEngine.ClusterInputModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+
+        <Reference Include="UnityEngine.ClusterRendererModule" Condition="Exists('$(MSBuildThisFileDirectory)\Managed\UnityEngine.ClusterRendererModule.dll')">
+            <HintPath>$(MSBuildThisFileDirectory)\Managed\UnityEngine.ClusterRendererModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+
+        <Reference Include="UnityEngine.UNETModule" Condition="Exists('$(MSBuildThisFileDirectory)\Managed\UnityEngine.UNETModule.dll')">
+            <HintPath>$(MSBuildThisFileDirectory)\Managed\UnityEngine.UNETModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+
+        <Reference Include="UnityEngine.DirectorModule" Condition="Exists('$(MSBuildThisFileDirectory)\Managed\UnityEngine.DirectorModule.dll')">
+            <HintPath>$(MSBuildThisFileDirectory)\Managed\UnityEngine.DirectorModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+
+        <Reference Include="UnityEngine.UnityAnalyticsModule" Condition="Exists('$(MSBuildThisFileDirectory)\Managed\UnityEngine.UnityAnalyticsModule.dll')">
+            <HintPath>$(MSBuildThisFileDirectory)\Managed\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+
+        <Reference Include="UnityEngine.PerformanceReportingModule" Condition="Exists('$(MSBuildThisFileDirectory)\Managed\UnityEngine.PerformanceReportingModule.dll')">
+            <HintPath>$(MSBuildThisFileDirectory)\Managed\UnityEngine.PerformanceReportingModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+
+        <Reference Include="UnityEngine.UnityConnectModule" Condition="Exists('$(MSBuildThisFileDirectory)\Managed\UnityEngine.UnityConnectModule.dll')">
+            <HintPath>$(MSBuildThisFileDirectory)\Managed\UnityEngine.UnityConnectModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+
+        <Reference Include="UnityEngine.WebModule" Condition="Exists('$(MSBuildThisFileDirectory)\Managed\UnityEngine.WebModule.dll')">
+            <HintPath>$(MSBuildThisFileDirectory)\Managed\UnityEngine.WebModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+
+        <Reference Include="UnityEngine.ARModule" Condition="Exists('$(MSBuildThisFileDirectory)\Managed\UnityEngine.ARModule.dll')">
+            <HintPath>$(MSBuildThisFileDirectory)\Managed\UnityEngine.ARModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+
+        <Reference Include="UnityEngine.VRModule" Condition="Exists('$(MSBuildThisFileDirectory)\Managed\UnityEngine.VRModule.dll')">
+            <HintPath>$(MSBuildThisFileDirectory)\Managed\UnityEngine.VRModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+
+        <Reference Include="UnityEngine.UIElementsModule" Condition="Exists('$(MSBuildThisFileDirectory)\Managed\UnityEngine.UIElementsModule.dll')">
+            <HintPath>$(MSBuildThisFileDirectory)\Managed\UnityEngine.UIElementsModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+
+        <Reference Include="UnityEngine.StyleSheetsModule" Condition="Exists('$(MSBuildThisFileDirectory)\Managed\UnityEngine.StyleSheetsModule.dll')">
+            <HintPath>$(MSBuildThisFileDirectory)\Managed\UnityEngine.StyleSheetsModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+
+        <Reference Include="UnityEngine.AssetBundleModule" Condition="Exists('$(MSBuildThisFileDirectory)\Managed\UnityEngine.AssetBundleModule.dll')">
+            <HintPath>$(MSBuildThisFileDirectory)\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+
+        <Reference Include="UnityEngine.AudioModule" Condition="Exists('$(MSBuildThisFileDirectory)\Managed\UnityEngine.AudioModule.dll')">
+            <HintPath>$(MSBuildThisFileDirectory)\Managed\UnityEngine.AudioModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+
+        <Reference Include="UnityEngine.CrashReportingModule" Condition="Exists('$(MSBuildThisFileDirectory)\Managed\UnityEngine.CrashReportingModule.dll')">
+            <HintPath>$(MSBuildThisFileDirectory)\Managed\UnityEngine.CrashReportingModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+
+        <Reference Include="UnityEngine.GameCenterModule" Condition="Exists('$(MSBuildThisFileDirectory)\Managed\UnityEngine.GameCenterModule.dll')">
+            <HintPath>$(MSBuildThisFileDirectory)\Managed\UnityEngine.GameCenterModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+
+        <Reference Include="UnityEngine.GridModule" Condition="Exists('$(MSBuildThisFileDirectory)\Managed\UnityEngine.GridModule.dll')">
+            <HintPath>$(MSBuildThisFileDirectory)\Managed\UnityEngine.GridModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+
+        <Reference Include="UnityEngine.ImageConversionModule" Condition="Exists('$(MSBuildThisFileDirectory)\Managed\UnityEngine.ImageConversionModule.dll')">
+            <HintPath>$(MSBuildThisFileDirectory)\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+
+        <Reference Include="UnityEngine.InputModule" Condition="Exists('$(MSBuildThisFileDirectory)\Managed\UnityEngine.InputModule.dll')">
+            <HintPath>$(MSBuildThisFileDirectory)\Managed\UnityEngine.InputModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+
+        <Reference Include="UnityEngine.JSONSerializeModule" Condition="Exists('$(MSBuildThisFileDirectory)\Managed\UnityEngine.JSONSerializeModule.dll')">
+            <HintPath>$(MSBuildThisFileDirectory)\Managed\UnityEngine.JSONSerializeModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+
+        <Reference Include="UnityEngine.ParticlesLegacyModule" Condition="Exists('$(MSBuildThisFileDirectory)\Managed\UnityEngine.ParticlesLegacyModule.dll')">
+            <HintPath>$(MSBuildThisFileDirectory)\Managed\UnityEngine.ParticlesLegacyModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+
+        <Reference Include="UnityEngine.Physics2DModule" Condition="Exists('$(MSBuildThisFileDirectory)\Managed\UnityEngine.Physics2DModule.dll')">
+            <HintPath>$(MSBuildThisFileDirectory)\Managed\UnityEngine.Physics2DModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+
+        <Reference Include="UnityEngine.ScreenCaptureModule" Condition="Exists('$(MSBuildThisFileDirectory)\Managed\UnityEngine.ScreenCaptureModule.dll')">
+            <HintPath>$(MSBuildThisFileDirectory)\Managed\UnityEngine.ScreenCaptureModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+
+        <Reference Include="UnityEngine.SharedInternalsModule" Condition="Exists('$(MSBuildThisFileDirectory)\Managed\UnityEngine.SharedInternalsModule.dll')">
+            <HintPath>$(MSBuildThisFileDirectory)\Managed\UnityEngine.SharedInternalsModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+
+        <Reference Include="UnityEngine.SpriteMaskModule" Condition="Exists('$(MSBuildThisFileDirectory)\Managed\UnityEngine.SpriteMaskModule.dll')">
+            <HintPath>$(MSBuildThisFileDirectory)\Managed\UnityEngine.SpriteMaskModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+
+        <Reference Include="UnityEngine.SpriteShapeModule" Condition="Exists('$(MSBuildThisFileDirectory)\Managed\UnityEngine.SpriteShapeModule.dll')">
+            <HintPath>$(MSBuildThisFileDirectory)\Managed\UnityEngine.SpriteShapeModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+
+        <Reference Include="UnityEngine.TerrainModule" Condition="Exists('$(MSBuildThisFileDirectory)\Managed\UnityEngine.TerrainModule.dll')">
+            <HintPath>$(MSBuildThisFileDirectory)\Managed\UnityEngine.TerrainModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+
+        <Reference Include="UnityEngine.TilemapModule" Condition="Exists('$(MSBuildThisFileDirectory)\Managed\UnityEngine.TilemapModule.dll')">
+            <HintPath>$(MSBuildThisFileDirectory)\Managed\UnityEngine.TilemapModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+
+        <Reference Include="UnityEngine.UnityWebRequestModule" Condition="Exists('$(MSBuildThisFileDirectory)\Managed\UnityEngine.UnityWebRequestModule.dll')">
+            <HintPath>$(MSBuildThisFileDirectory)\Managed\UnityEngine.UnityWebRequestModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+
+        <Reference Include="UnityEngine.UnityWebRequestAudioModule" Condition="Exists('$(MSBuildThisFileDirectory)\Managed\UnityEngine.UnityWebRequestAudioModule.dll')">
+            <HintPath>$(MSBuildThisFileDirectory)\Managed\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+
+        <Reference Include="UnityEngine.UnityWebRequestTextureModule" Condition="Exists('$(MSBuildThisFileDirectory)\Managed\UnityEngine.UnityWebRequestTextureModule.dll')">
+            <HintPath>$(MSBuildThisFileDirectory)\Managed\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+
+        <Reference Include="UnityEngine.UnityWebRequestWWWModule" Condition="Exists('$(MSBuildThisFileDirectory)\Managed\UnityEngine.UnityWebRequestWWWModule.dll')">
+            <HintPath>$(MSBuildThisFileDirectory)\Managed\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+
+        <Reference Include="UnityEngine.VideoModule" Condition="Exists('$(MSBuildThisFileDirectory)\Managed\UnityEngine.VideoModule.dll')">
+            <HintPath>$(MSBuildThisFileDirectory)\Managed\UnityEngine.VideoModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+
+        <Reference Include="UnityEngine.WindModule" Condition="Exists('$(MSBuildThisFileDirectory)\Managed\UnityEngine.WindModule.dll')">
+            <HintPath>$(MSBuildThisFileDirectory)\Managed\UnityEngine.WindModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+
+        <Reference Include="UnityEngine.CoreModule" Condition="Exists('$(MSBuildThisFileDirectory)\Managed\UnityEngine.CoreModule.dll')">
+            <HintPath>$(MSBuildThisFileDirectory)\Managed\UnityEngine.CoreModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+    </ItemGroup>
+</Project>

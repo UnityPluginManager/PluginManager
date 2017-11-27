@@ -1,0 +1,12 @@
+[submodule "Plugin.Templates/Template.NET35"]
+	path = Plugin.Templates/Template.NET35
+	url = https://github.com/UnityPluginManager/Template.NET35.git
+[submodule "Plugin.Templates/Template.NET46"]
+	path = Plugin.Templates/Template.NET46
+	url = https://github.com/UnityPluginManager/Template.NET46.git
+[submodule "Plugin.Projects/Universal.SamplePlugin"]
+	path = Plugin.Projects/Universal.SamplePlugin
+	url = https://github.com/UnityPluginManager/Universal.SamplePlugin.git
+[submodule "Plugin.Projects/SlimeRancher.DebugMenu"]
+	path = Plugin.Projects/SlimeRancher.DebugMenu
+	url = https://github.com/UnityPluginManager/SlimeRancher.DebugMenu.git

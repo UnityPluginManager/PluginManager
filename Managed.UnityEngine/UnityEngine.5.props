@@ -1,0 +1,13 @@
+<Project>
+    <ItemGroup>
+        <Reference Include="UnityEngine.UI" Condition="Exists('$(MSBuildThisFileDirectory)\Managed\UnityEngine.UI.dll')">
+            <HintPath>$(MSBuildThisFileDirectory)\Managed\UnityEngine.UI.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+
+        <Reference Include="UnityEngine" Condition="Exists('$(MSBuildThisFileDirectory)\Managed\UnityEngine.dll')">
+            <HintPath>$(MSBuildThisFileDirectory)\Managed\UnityEngine.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+    </ItemGroup>
+</Project>

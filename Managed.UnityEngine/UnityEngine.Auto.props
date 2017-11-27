@@ -1,0 +1,16 @@
+<Project>
+    <Choose>
+        <When Condition="'$(TargetFramework)' == 'net35' Or '$(TargetFramework)' == 'net20' Or !Exists('$(MSBuildThisFileDirectory)\Managed\UnityEngine.CoreModule.dll')">
+            <PropertyGroup>
+                <UnityPropsPath>$(MSBuildThisFileDirectory)\UnityEngine.5.props</UnityPropsPath>
+            </PropertyGroup>
+        </When>
+        <Otherwise>
+            <PropertyGroup>
+                <UnityPropsPath>$(MSBuildThisFileDirectory)\UnityEngine.2017.props</UnityPropsPath>
+            </PropertyGroup>
+        </Otherwise>
+    </Choose>
+
+    <Import Project="$(UnityPropsPath)" />
+</Project>

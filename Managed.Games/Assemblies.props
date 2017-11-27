@@ -1,0 +1,22 @@
+<Project>
+    <ItemGroup Condition="Exists('$(MSBuildThisFileDirectory)\$(TargetGame)\Assembly-CSharp.dll')">
+        <Reference Include="Assembly-CSharp">
+            <HintPath>$(MSBuildThisFileDirectory)\$(TargetGame)\Assembly-CSharp.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+    </ItemGroup>
+
+    <ItemGroup Condition="Exists('$(MSBuildThisFileDirectory)\$(TargetGame)\Assembly-UnityScript.dll')">
+        <Reference Include="Assembly-UnityScript">
+            <HintPath>$(MSBuildThisFileDirectory)\$(TargetGame)\Assembly-UnityScript.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+    </ItemGroup>
+
+    <ItemGroup Condition="Exists('$(MSBuildThisFileDirectory)\$(TargetGame)\Assembly-Boo.dll')">
+        <Reference Include="Assembly-Boo">
+            <HintPath>$(MSBuildThisFileDirectory)\$(TargetGame)\Assembly-Boo.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+    </ItemGroup>
+</Project>
