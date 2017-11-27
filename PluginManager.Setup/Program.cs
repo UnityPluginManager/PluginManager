@@ -59,17 +59,19 @@ namespace PluginManager.Setup
             Console.WriteLine("UPM installed.");
         }
 
-        /// <summary>Retrieves the version from the 'globalgamemanagers' file</summary>
+        /// <summary>Retrieves the version from the game files</summary>
         /// <returns>An instance of <see cref="System.Version"/> containing the game's Unity version</returns>
         /// <exception cref="NotSupportedException">Thrown when an unsupported version of Unity is in use</exception>
         static Version GetUnityVersion()
         {
             string dataPath = PathDiscovery.FindDataDirectory();
+            var dataFiles = new[] { "globalgamemanagers", "mainData" };
 
-            if (!File.Exists(Path.Combine(dataPath, "globalgamemanagers")))
+            if (!dataFiles.Any(p => File.Exists(Path.Combine(dataPath, p))))
                 throw new NotSupportedException("Unsupported Unity version.");
 
-            using (FileStream ggm = File.OpenRead(Path.Combine(dataPath, "globalgamemanagers")))
+            string dataFile = dataFiles.First(p => File.Exists(Path.Combine(dataPath, p)));
+            using (FileStream ggm = File.OpenRead(Path.Combine(dataPath, dataFile)))
             using (var reader = new BinaryReader(ggm))
             {
                 reader.ReadUInt32(); // metadataSize
