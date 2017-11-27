@@ -20,9 +20,12 @@ namespace PluginManager.Setup
 
             Version version = GetUnityVersion();
 
-            // as of Unity 2017, the UnityEngine assembly has been split into multiple assemblies
+            // as of Unity 2017.2, the UnityEngine assembly has been split into multiple assemblies
             // the assembly containing the GameObject class is UnityEngine.CoreModule
-            string coreName = version.Major < 2017 ? "UnityEngine" : "UnityEngine.CoreModule";
+            string coreName = version.Major < 2017 || (version.Major == 2017 && version.Minor == 1)
+                ? "UnityEngine"
+                : "UnityEngine.CoreModule";
+
             string corePath = PathDiscovery.GetAssemblyPath(resolver, coreName);
             byte[] coreData = File.ReadAllBytes(corePath);
 
@@ -50,9 +53,8 @@ namespace PluginManager.Setup
 
             unityCore.Write(corePath);
 
-            // pre-2017 versions of Unity need PluginManager.Core.dll in the Managed directory
-            if (version.Major < 2017)
-                File.Copy(CoreLibrary, Path.Combine(managedPath, CoreLibrary), true);
+            // We need to copy PluginManager.Core.dll into the Managed directory
+            File.Copy(CoreLibrary, Path.Combine(managedPath, CoreLibrary), true);
 
             Console.WriteLine("UPM installed.");
         }
