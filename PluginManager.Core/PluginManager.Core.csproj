@@ -4,7 +4,4 @@
   </PropertyGroup>
   <Import Project="..\Managed.UnityEngine\UnityEngine.Auto.props" />
   <Import Project="..\DotNet35.props" />
-  <ItemGroup>
-    <PackageReference Include="Mono.Cecil" Version="0.10.0-beta7" />
-  </ItemGroup>
 </Project>
