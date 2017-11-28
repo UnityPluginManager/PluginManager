@@ -12,7 +12,7 @@ namespace PluginManager.Setup
             if (Directory.Exists("Data")) return "Data";
             
             // test #2: ExecutableName_Data
-            foreach (string fileName in Directory.EnumerateFiles(".", "*.exe"))
+            foreach (string fileName in Directory.GetFiles(".", "*.exe"))
             {
                 string exeName = Path.GetFileNameWithoutExtension(fileName);
                 string potentialPath = $"{exeName}_Data";
@@ -20,7 +20,7 @@ namespace PluginManager.Setup
             }
             
             // test #3: Any path ending in "_Data"
-            foreach (string path in Directory.EnumerateDirectories(".", "*_Data"))
+            foreach (string path in Directory.GetDirectories(".", "*_Data"))
                 return path;
 
             throw new DirectoryNotFoundException("Could not locate 'Data' directory.");
