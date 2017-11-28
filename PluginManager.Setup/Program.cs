@@ -55,6 +55,9 @@ namespace PluginManager.Setup
 
             // We need to copy PluginManager.Core.dll into the Managed directory
             File.Copy(CoreLibrary, Path.Combine(managedPath, CoreLibrary), true);
+            
+            // Mono.Cecil too, since it's used for assembly resolving
+            File.Copy("Mono.Cecil.dll", Path.Combine(managedPath, "Mono.Cecil.dll"), true);
 
             Console.WriteLine("UPM installed.");
         }
